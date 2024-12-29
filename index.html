@@ -1,1 +1,221 @@
-<h1> Test </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naved Merchant - Software Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Hero Section -->
+    <header class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Naved Merchant</h1>
+            <p class="text-xl mb-6">Hello there! thanks for visiting my website. I am Naved and I love building things!</p>
+            <div class="flex gap-4">
+                <a href="https://github.com/akonsand" class="flex items-center gap-2 hover:text-blue-200">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/navedmer" class="flex items-center gap-2 hover:text-blue-200">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:naved.merchant@gmail.com" class="flex items-center gap-2 hover:text-blue-200">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="tel:+17163481594" class="flex items-center gap-2 hover:text-blue-200">
+                    <i class="fas fa-phone"></i> +1 716-348-1594
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-4">
+            <div class="flex space-x-8 py-4">
+                <button onclick="showSection('experience')" class="nav-btn text-blue-600 font-semibold">Experience</button>
+                <button onclick="showSection('education')" class="nav-btn text-gray-600 hover:text-blue-600">Education</button>
+                <button onclick="showSection('skills')" class="nav-btn text-gray-600 hover:text-blue-600">Skills</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Experience Section -->
+        <section id="experience" class="section active fade-in">
+            <h2 class="text-2xl font-bold mb-6">Personal Projects</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold text-blue-600">MyDeviceAI</h3>
+                    <div class="text-gray-600 mb-2">2024</div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-blue-600 mt-1"></i>
+                            <span class="ml-2">MyDeviceAI lets you run a LLM right on your phone, without an internet connection. it optimizes the app for your 
+                                iPhone.
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Technologies:</strong>  React Native
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold text-blue-600">PatternLauncher</h3>
+                    <div class="text-gray-600 mb-2">2014</div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-blue-600 mt-1"></i>
+                            <span class="ml-2">Pattern Launcher lets you launch any app on your phone from anywhere, using a Pattern</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-blue-600 mt-1"></i>
+                            <span class="ml-2">> 10,000 downloads, and 200 5 star reviews</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Technologies:</strong> Java, Python, Spring Boot, Spring Batch, Spark, Tensorflow, Storm
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2 class="text-2xl font-bold mb-6">Professional Experience</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold text-blue-600">Amazon Lab 126</h3>
+                    <div class="text-gray-600 mb-2">Software Engineer | July 2019 – Present</div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-blue-600 mt-1"></i>
+                            <span class="ml-2">Working as a part of the HumanIO team, solving problems related to text input and output on Amazon devices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-blue-600 mt-1"></i>
+                            <span class="ml-2">Designed and Developed core Internationalization features for next generation Vega Operating System</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-blue-600 mt-1"></i>
+                            <span class="ml-2">Built the First ever AI keyboard for Amazon's Tablet devices, Writing Assist, projected to increase revenue by 800k</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Technologies:</strong> Java, C, C++, JavaScript
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold text-blue-600">Oath Inc. (Formerly Yahoo Inc.)</h3>
+                    <div class="text-gray-600 mb-2">Software Engineer | Feb 2017 – July 2019</div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-blue-600 mt-1"></i>
+                            <span class="ml-2">Worked as a part of Tripod, the photo and video platform</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-blue-600 mt-1"></i>
+                            <span class="ml-2">Built Infrastructure for real time machine learning projects like realtime celebrity face detection</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-blue-600 mt-1"></i>
+                            <span class="ml-2">Increased the availability of the system to 99.99%</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Technologies:</strong> Java, Python, Spring Boot, Spring Batch, Spark, Tensorflow, Storm
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="text-2xl font-bold mb-6">Education</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold text-blue-600">University at Buffalo</h3>
+                    <div class="text-gray-600">Master of Science in Computer Science</div>
+                    <div class="text-gray-600">Graduated: Feb 2017 | GPA: 3.72</div>
+                    <div class="mt-2">
+                        <strong>Relevant Courses:</strong> Distributed Systems, Operating Systems, System Security, Information Retrieval, Machine Learning
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold text-blue-600">Mumbai University</h3>
+                    <div class="text-gray-600">Bachelor of Computer Science Engineering</div>
+                    <div class="text-gray-600">Graduated: July 2013 | GPA: 3.79</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="text-2xl font-bold mb-6">Skills</h2>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold mb-2">Programming Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Java</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Perl</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">C#</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">C++</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">JavaScript</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Frameworks & Technologies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Spring Boot</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">AWS</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Node.js</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Android SDK</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Hadoop</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Spark</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected section
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+            selectedSection.classList.add('fade-in');
+            
+            // Update navigation buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('text-blue-600', 'font-semibold');
+                btn.classList.add('text-gray-600');
+            });
+            event.target.classList.add('text-blue-600', 'font-semibold');
+            event.target.classList.remove('text-gray-600');
+        }
+    </script>
+</body>
+</html>
