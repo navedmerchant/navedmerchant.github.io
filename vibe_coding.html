@@ -159,7 +159,7 @@
     <main>
         <article>
             <div class="post-meta">
-                <time datetime="2024-03-21">March 21, 2024</time>
+                <time datetime="2025-05-28">May 28, 2025</time>
                 <span>•</span>
                 <span>10 min read</span>
                 <span>•</span>
@@ -167,13 +167,13 @@
             </div>
             <div class="post-content">
                 <p>
-                    Vibe coding has emerged as a recent trend where programmers don't really write code. Instead, they tell AI to let loose and build something they want. AI, of course, follows your instructions and builds something. At first, it is amazing. A few things go through your mind:
+                    Vibe coding has emerged as a recent trend where programmers don't really write code. Instead, they tell AI to build the project for them. AI, of course, follows your instructions and builds something. At first, it is amazing. A few things go through your mind:
                 </p>
                 
                 <ul>
                     <li>Wow, this is amazing. I can build this so fast.</li>
-                    <li>Damn, it figured out this too (useForwardRef)? It took a while for me to figure it out the first time I did it.</li>
-                    <li>The UI is so cool. I can build anything I want.</li>
+                    <li>Damn, it figured out this too? It took a while for me to figure it out the first time I did it.</li>
+                    <li>AI is pretty amazing at building User Interfaces.</li>
                 </ul>
 
                 <p>
@@ -183,32 +183,44 @@
 
                 <p>
                     Then come the bugs. Oh, this button isn't doing what it's supposed to do. Oh, why isn't this navigation param making it to the page? 
-                    You tell the AI to fix it.<br><br>
+                    You tell the AI to fix it.
+                </p>
                     
+                <p>
                     It tries something, it can't fix it.<br>
                     You tell it to try again.<br>
                     It tries again, it still can't fix it.<br>
                     You tell it to try again.<br>
                     It gives you the original code again.<br>
                     You change the model being used to try and see if that fixes it.<br>
-                    That doesn't work either.<br><br>
+                    That doesn't work either.
+                </p>
 
-                    You are now a slave to the AI. You spend hours debugging it, and you find the issue and fix it.<br><br>
+                <p>
+                    You are now a slave to the AI. You spend hours debugging it, and you find the issue and fix it.
+                </p>
 
-                    That breaks something else.<br><br>
+                <p>
+                    That breaks something else.
+                </p>
 
-                    You hate vibe coding. It leaves you with a sour taste in your mouth.<br><br>
+                <p>
+                    You hate vibe coding. It leaves you with a sour taste in your mouth.
+                </p>
 
+                <p>
                     You go online, developers posting on X they just single-shotted an entire game using AI. 
-                    You keep wondering why you had a different experience. Are they lying? Or is AI just not good at what you were trying to make?<br><br>
+                    You keep wondering why you had a different experience. Are they lying? Or is AI just not good at what you were trying to make?
+                </p>
 
+                <p>
                     You turn off your laptop and go to sleep. Maybe vibe coding just isn't for you.
                 </p>
 
                 <h2>Understanding AI</h2>
                 <p>
-                    We need to have a discussion about what "AI" is. At the end of the day, it's just a function that produces strings.
-                    We have trained this function to output meaningful strings, and in our case, code. 
+                    We need to have a discussion about what "AI" is. At the end of the day, it's just a function that recursively produces strings.
+                    We have trained this function to recursively output strings, and recursively uses the string it just produced to produce more strings. In our case its gotten very good at producing code (a string).
                     The training of that function has gotten so good that in some cases it can one-shot an entire game.
                 </p>
 
@@ -264,8 +276,10 @@
     }, [loadHistories]) // Add loadHistories as dependency
 );</code></pre>
                 
-                For reference, here is the commit on GitHub:
-                <a href="https://github.com/navedmerchant/MyDeviceAI/commit/26804c528b80442e0ed817564f4003b45961dd6f#diff-7ae03174532ef7a6bba7065a29328fdb9b3344bd15e7bfb51625a5415e285b46">Commit</a>
+                <p>
+                    For reference, here is the commit on GitHub:
+                    <a href="https://github.com/navedmerchant/MyDeviceAI/commit/26804c528b80442e0ed817564f4003b45961dd6f#diff-7ae03174532ef7a6bba7065a29328fdb9b3344bd15e7bfb51625a5415e285b46">Commit</a>
+                </p>
 
                 <p>
                     For people who don't know React, this is the equivalent of an infinite loop in React.
@@ -291,22 +305,36 @@
                 </p>
 
                 <p>
-                    The overarching rule to remember is that you are the one coding. AI is your assistant.
+                    The overarching rule to remember is that you are the one coding. AI is your assistant. You wont be writing code manually but telling AI what to write and exactly how to write it. You will then verify it did what it was suuposed to do. 
+                    This approach flips the roles, instead of you eventually being a slave to AI, you are the one in control.
                 </p>
                     
                 <h3>How to Practice Zen Vibe Coding:</h3>
                 <ul>
                     <li>
+                        <strong>Get Coding editor, like Cursor or Windsurf.</strong><br>
+                        <p>The 20 dollars a month you pay for Cursor is well worth it. Windsurf is similar, eithe of them work. I have tried other token based options like Cline and they dont work as well,
+                        They are just great tools to get AI to write code and apply the output perfectly. When used correctly the 20 bucks will go a long way helping you build stuff faster.</p>
+                    </li>
+                    <li>
                         <strong>Work in small sections:</strong><br>
                         Don't just tell the AI to build the feature. Tell it what you want it to build.
                         <p>
-                        For example, if you want to add database support to your app, break it down this way:
+                        If working on existing code, select the code you want to change (Ctrl+L in Cursor), and operate on that.
+                        If working on a new feature, break it down into small sections. For example, if you want to add database support to your app, break it down this way:
                         </p>
                         <ol>
-                            <li>Tell the AI to create database helper functions using your choice of library (for example, use op-sqlite)</li>
-                            <li>Tell AI to generate the functionality and tables next</li>
+                            <li>Tell the AI to create schema and database helper functions (like initdb()) using your choice of library (for example, use op-sqlite). You will  be the one that designes the schema as in what are the colums of the table, and the AI will implement it.</li>
+                            <li>Command it to write methods to insert, update, delete and query the database</li>
                             <li>Finally, tell the AI to integrate your database with the rest of the app (break this into smaller sections, for example, add persistence for chats, and then for messages in the chats)</li>
                         </ol>
+                    </li>
+                    <li>
+                        <strong>Use new tabs often:</strong><br>
+                        <p>
+                            New tabs are free. Old Context is your enemy. AI performance gets worse as the context window increases.
+                            Use new tabs often to keep the context window small, and fresh. Only keep relevant code in your context window for the best performance.
+                        </p>
                     </li>
                     <li>
                         <strong>Review the code:</strong><br>
@@ -315,31 +343,32 @@
                     </li>
                     <li>
                         <strong>Commit your code:</strong><br>
-                        Commit your code after every small section. Think of commits as your save points in a video game. 
-                        If something goes wrong, you can always revert to the previous commit and try a different approach.
+                        Commit your code after every small section. If something goes wrong, you can always revert to the previous commit and try a different approach.
                         This is probably the most important thing to do - it's not just good practice, it's your safety net when working with AI.
-                        Remember: Commits are free, but debugging AI-generated code will cost you precious hours of your life! 💀
+                        Remember: Commits are free, but debugging AI-generated code will cost you precious hours of your life!
                     </li>
                     <li>
                         <strong>Don't use Claude 3.7 Sonnet:</strong><br>
                         Here's a hot take: Use Claude 3.6 Sonnet for coding. Why? Because 3.7 is like that overachieving intern who tries to 
                         do everything at once and ends up creating more work for everyone. 3.6 is your reliable senior dev - it does exactly 
-                        what you ask, nothing more, nothing less, and does it perfectly. It's like catching lightning in a bottle, and I hope 
-                        Anthropic keeps it around. (PS: Still testing Claude 4, jury's out on that one!)
+                        what you ask, nothing more, nothing less, and does it perfectly. Anthropic created the perfect coding model in 2024 and I have yet to find a better model for programming. 
+                        After Anthropic moved to a thinking based model in 3.7, they chnaged something fundamentally in the way it works and it ends up doing more than its asked to do, and ends up messing things up.
+                        Googles Gemini 2.5 is great too, but be careful with that one too, it also tends to over engineer things. Do not use ChatGPT for coding.
+                        (PS: Still testing Claude 4, jury's out on that one!)
                     </li>
                     <li>
                         <strong>Revert often:</strong><br>
                         Trust your developer spidey-sense! If something feels off about the direction the AI is taking, it probably is. 
-                        When you feel that tingling sensation that says "this is getting messy," don't hesitate - revert and start fresh. 
-                        Your first prompts are rarely perfect, and that's okay. Starting over is way better than trying to untangle a bowl 
+                        When you feel that tingling sensation that says "this is getting messy," don't hesitate - revert and start fresh. The commits you 
+                        made following previous points will come in handy.
+                        Your initial prompts might not be good enough for AI to understand what you want it do, and that's okay. Starting over is way better than trying to untangle a bowl 
                         of AI spaghetti code later. Remember: Clean slate > Messy state!
                     </li>
                 </ul>
 
                 <h2>Conclusion</h2>
                 <p>
-                    I've been zen vibe coding for a while now, and it's been a game-changer. Think of it as having an AI co-pilot - 
-                    it can help you fly faster and higher, but you need to stay in control of the plane. Stop mindless vibe coding, 
+                    I've been zen vibe coding for a while now, and it's been a game-changer. I have been able to build things faster then ever before, and the products built are way more stable. Stop mindless vibe coding, 
                     embrace the zen, and watch your productivity soar (without melting any phones in the process! 🔥).
                 </p>
             </div>
